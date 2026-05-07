@@ -1,0 +1,1023 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Financial Services | Justin Chacko</title>
+    
+    <!-- Tailwind & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Global Financial Services",
+  "alternateName": "Global Financial Services by Justin Chacko",
+  "url": "https://globalfinancial.services",
+  "logo": "https://globalfinancial.services/logo.png",
+  "description": "AMFI registered mutual fund distributor in Thiruvalla offering SIP, retirement planning, education planning, insurance advisory and portfolio management.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Thirumoolapuram",
+    "addressLocality": "Thiruvalla",
+    "addressRegion": "Kerala",
+    "postalCode": "689115",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-8848499404",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Malayalam"]
+  },
+  "sameAs": [
+    "https://wa.me/918848499404"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Justin Chacko"
+  },
+  "knowsAbout": ["Mutual Funds", "SIP", "Retirement Planning", "Education Planning", "Insurance", "Portfolio Management"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "AMFI Registered Mutual Fund Distributor",
+    "credentialCategory": "Professional Certification",
+    "identifier": "ARN-800075"
+  }
+}
+</script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+        .smooth-transition { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInUp { animation: fadeInUp 0.6s ease-out forwards; }
+        .stat-number { font-feature-settings: "tnum"; }
+    </style>
+
+    <!-- SEO -->
+    <meta name="description" content="Mutual Fund Distributor in Thiruvalla. SIP, Retirement Planning, Wealth Management by Justin Chacko ARN-800075.">
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo with Image -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Global Financial Services" class="h-12 w-auto md:h-14 group-hover:scale-105 smooth-transition">
+                <div class="flex flex-col">
+                    <span class="font-bold text-blue-900 text-lg md:text-xl leading-tight">Global Financial</span>
+                    <span class="text-xs text-orange-500 font-bold tracking-[0.2em] uppercase">Services</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-1">
+                <a href="index.html" class="px-4 py-2 text-sm font-semibold text-blue-900 bg-blue-50 rounded-lg">Home</a>
+                <a href="about.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">About Us</a>
+                <a href="services.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Services</a>
+                <a href="retirement.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Retirement</a>
+                <a href="education.html" class="px-4 py-2 text-sm font-medium text-orange-600 hover:text-orange-700 hover:bg-orange-50 rounded-lg smooth-transition">Education</a>
+                <a href="contact.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Contact</a>
+            </div>
+
+            <!-- Right Side Actions -->
+            <div class="flex items-center gap-3">
+                <a href="tel:8848499404" class="hidden md:flex items-center gap-2 text-blue-900 font-semibold hover:text-blue-700 smooth-transition">
+                    <i class="fas fa-phone-alt text-sm"></i>
+                    <span>88484 99404</span>
+                </a>
+                <a href="https://wa.me/918848499404" class="hidden sm:flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-green-600 shadow-md hover:shadow-lg smooth-transition">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-blue-900 p-2 hover:bg-gray-100 rounded-lg smooth-transition">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div class="px-4 py-4 space-y-1">
+            <a href="index.html" class="block px-4 py-3 text-blue-900 bg-blue-50 rounded-lg font-semibold">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg smooth-transition">About Us</a>
+            <a href="services.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg smooth-transition">Our Services</a>
+            <a href="calculator.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg smooth-transition">SIP Calculator</a>
+            <a href="retirement.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg smooth-transition">Retirement Planner</a>
+            <a href="education.html" class="block px-4 py-3 text-orange-600 hover:bg-orange-50 rounded-lg smooth-transition font-medium">Education Planner</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg smooth-transition">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="relative min-h-[600px] flex items-center">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 gradient-bg opacity-90"></div>
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white animate-fadeInUp">
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium">AMFI Registered | ARN-800075</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Build Wealth.<br>
+                    <span class="text-yellow-300">Retire</span> Stress-Free.
+                </h1>
+                <p class="text-xl text-blue-100 mb-8 leading-relaxed max-w-lg">
+                    Personalized Mutual Fund & SIP Planning for Long-Term Financial Freedom.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#questionnaire" class="inline-flex items-center gap-2 bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-bold hover:bg-yellow-300 shadow-lg hover:shadow-xl smooth-transition">
+                        <i class="fas fa-clipboard-list"></i>
+                        Take Financial Health Check
+                    </a>
+                    <a href="https://wa.me/918848499404" class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 border border-white/30 smooth-transition">
+                        <i class="fab fa-whatsapp"></i>
+                        Free Consultation
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 mt-12">
+                    <div>
+                        <div class="text-3xl font-bold stat-number">20+</div>
+                        <div class="text-sm text-blue-200">Years Experience</div>
+                    </div>
+                    <div class="w-px h-8 bg-white/30"></div>
+                    <div>
+                        <div class="text-3xl font-bold stat-number">500+</div>
+                        <div class="text-sm text-blue-200">Happy Clients</div>
+                    </div>
+                    <div class="w-px h-8 bg-white/30"></div>
+                    <div>
+                        <div class="text-3xl font-bold stat-number">15+</div>
+                        <div class="text-sm text-blue-200">AMC Partners</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-2xl p-8 animate-fadeInUp" style="animation-delay: 0.2s;">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-blue-900">Quick SIP Calculator</h3>
+                    <p class="text-gray-500 mt-2">See your wealth potential</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Monthly Investment (₹)</label>
+                        <input type="number" id="quickSipAmount" value="5000" class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Time Period (Years)</label>
+                        <input type="number" id="quickSipYears" value="10" class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-xl">
+                        <p class="text-sm text-gray-600">Expected Returns: <span class="font-bold text-blue-900">12% p.a.</span></p>
+                        <div class="mt-3">
+                            <p class="text-sm text-gray-500">Estimated Maturity Value</p>
+                            <p class="text-3xl font-bold text-blue-900" id="quickSipResult">₹11,61,695</p>
+                        </div>
+                    </div>
+                    <button onclick="calculateQuickSIP()" class="w-full gradient-bg text-white font-bold py-3.5 rounded-xl hover:shadow-lg smooth-transition">
+                        Calculate Returns
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PARTNERS SECTION ========== -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-blue-600 font-bold text-sm uppercase tracking-wider">Our Partners</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-3">Trusted Asset Management Partners</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We partner with India's leading mutual fund companies to bring you the best investment options</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-blue-900 font-bold text-xl">SBI</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">SBI Mutual Fund</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-red-700 font-bold text-xl">HDFC</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">HDFC Mutual Fund</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-blue-600 font-bold text-xl">ICICI</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">ICICI Prudential</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-orange-700 font-bold text-xl">Kotak</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">Kotak Mutual Fund</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-green-700 font-bold text-xl">Axis</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">Axis Mutual Fund</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-purple-700 font-bold text-xl">Nippon</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">Nippon India MF</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-yellow-700 font-bold text-xl">UTI</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">UTI Mutual Fund</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-indigo-700 font-bold text-xl">Mirae</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">Mirae Asset</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-pink-700 font-bold text-xl">DSP</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">DSP Mutual Fund</p>
+                </div>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-6 flex items-center justify-center card-hover border border-gray-100">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <span class="text-teal-700 font-bold text-xl">Tata</span>
+                    </div>
+                    <p class="font-semibold text-gray-800">Tata Mutual Fund</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PRODUCTS SECTION ========== -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-orange-500 font-bold text-sm uppercase tracking-wider">Investment Products</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-3">Choose the Right Product for Your Goals</h2>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Diverse investment options tailored to your risk appetite and financial objectives</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-chart-line text-blue-900 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Large Cap Funds</h3>
+                <p class="text-gray-600 text-sm mb-4">Invest in top 100 companies with stable growth and lower volatility.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Low Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">10-12% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-rocket text-orange-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Mid Cap Funds</h3>
+                <p class="text-gray-600 text-sm mb-4">High growth potential from emerging companies in 101-250 rank.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">Medium Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">12-15% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-gem text-purple-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Small Cap Funds</h3>
+                <p class="text-gray-600 text-sm mb-4">Maximum growth potential from emerging businesses and startups.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">High Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">15-20% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-globe text-green-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Flexi Cap Funds</h3>
+                <p class="text-gray-600 text-sm mb-4">Diversified across large, mid & small caps for balanced growth.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Medium Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">12-14% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-red-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">ELSS Tax Saving</h3>
+                <p class="text-gray-600 text-sm mb-4">Save tax under 80C with 3-year lock-in and equity returns.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Tax Benefit</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">12-15% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-balance-scale text-indigo-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Balanced Advantage</h3>
+                <p class="text-gray-600 text-sm mb-4">Dynamic allocation between equity and debt based on market.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Low-Medium Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">10-12% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-coins text-yellow-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Debt Funds</h3>
+                <p class="text-gray-600 text-sm mb-4">Stable returns through government and corporate bonds.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Very Low Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">6-8% Returns*</span>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 card-hover">
+                <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-chart-bar text-pink-700 text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-gray-800 mb-2">Index Funds</h3>
+                <p class="text-gray-600 text-sm mb-4">Low-cost passive investing tracking Nifty or Sensex.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Low Risk</span>
+                    <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">10-12% Returns*</span>
+                </div>
+            </div>
+        </div>
+        
+        <p class="text-xs text-gray-400 text-center mt-8">*Past performance does not guarantee future returns. Investments are subject to market risks.</p>
+    </div>
+</section>
+
+<!-- ========== FINANCIAL HEALTH QUESTIONNAIRE ========== -->
+<section id="questionnaire" class="py-16 bg-gradient-to-br from-blue-900 to-blue-700">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+            <span class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                <i class="fas fa-clipboard-check mr-2"></i>Financial Health Check
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Discover Your Financial Wellness Score</h2>
+            <p class="text-xl text-blue-100">Answer 7 quick questions to get personalized investment recommendations</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-2xl p-8">
+            <!-- Progress Bar -->
+            <div class="mb-8">
+                <div class="flex justify-between mb-2">
+                    <span class="text-sm font-semibold text-gray-600">Progress</span>
+                    <span class="text-sm font-semibold text-blue-900" id="progressText">Question 1 of 7</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div id="progressBar" class="bg-blue-600 h-2 rounded-full smooth-transition" style="width: 14%"></div>
+                </div>
+            </div>
+
+            <!-- Questionnaire Form -->
+            <div id="questionnaireContainer">
+                <!-- Question 1 -->
+                <div id="q1" class="question-slide">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">1. What is your age group?</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="selectAge('18-25')" class="age-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-user-graduate text-blue-500 mr-2"></i>18-25 years
+                        </button>
+                        <button onclick="selectAge('26-35')" class="age-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-user-tie text-blue-500 mr-2"></i>26-35 years
+                        </button>
+                        <button onclick="selectAge('36-45')" class="age-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-user text-blue-500 mr-2"></i>36-45 years
+                        </button>
+                        <button onclick="selectAge('46-55')" class="age-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-user-tie text-blue-500 mr-2"></i>46-55 years
+                        </button>
+                        <button onclick="selectAge('55+')" class="age-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left col-span-2">
+                            <i class="fas fa-user text-blue-500 mr-2"></i>55+ years
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div id="q2" class="question-slide hidden">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">2. What is your primary financial goal?</h3>
+                    <div class="space-y-3">
+                        <button onclick="selectGoal('Wealth Creation')" class="goal-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-chart-line text-green-500 mr-3"></i>Wealth Creation & Growth
+                        </button>
+                        <button onclick="selectGoal('Retirement Planning')" class="goal-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-home text-blue-500 mr-3"></i>Retirement Planning
+                        </button>
+                        <button onclick="selectGoal('Child Education')" class="goal-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-graduation-cap text-purple-500 mr-3"></i>Child's Education
+                        </button>
+                        <button onclick="selectGoal('Tax Saving')" class="goal-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-file-invoice text-orange-500 mr-3"></i>Tax Saving
+                        </button>
+                        <button onclick="selectGoal('Regular Income')" class="goal-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition text-left">
+                            <i class="fas fa-hand-holding-usd text-yellow-500 mr-3"></i>Regular Income
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div id="q3" class="question-slide hidden">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">3. How would you describe your risk tolerance?</h3>
+                    <div class="space-y-4">
+                        <button onclick="selectRisk('Low')" class="risk-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
+                                <span class="font-semibold">Low Risk</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1 ml-6">I prefer safety over returns. Can't tolerate losses.</p>
+                        </button>
+                        <button onclick="selectRisk('Moderate')" class="risk-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></span>
+                                <span class="font-semibold">Moderate Risk</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1 ml-6">I can tolerate some volatility for better returns.</p>
+                        </button>
+                        <button onclick="selectRisk('High')" class="risk-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <div class="flex items-center">
+                                <span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+                                <span class="font-semibold">High Risk</span>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-1 ml-6">I'm comfortable with significant volatility for maximum returns.</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div id="q4" class="question-slide hidden">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">4. What is your monthly income range?</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="selectIncome('< 25,000')" class="income-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            Below ₹25,000
+                        </button>
+                        <button onclick="selectIncome('25,000 - 50,000')" class="income-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            ₹25,000 - ₹50,000
+                        </button>
+                        <button onclick="selectIncome('50,000 - 1,00,000')" class="income-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            ₹50,000 - ₹1,00,000
+                        </button>
+                        <button onclick="selectIncome('1,00,000 - 2,00,000')" class="income-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            ₹1,00,000 - ₹2,00,000
+                        </button>
+                        <button onclick="selectIncome('> 2,00,000')" class="income-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition col-span-2">
+                            Above ₹2,00,000
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div id="q5" class="question-slide hidden">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">5. Do you currently have any investments?</h3>
+                    <div class="space-y-3">
+                        <button onclick="selectInvestments('None')" class="invest-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="far fa-circle text-gray-400 mr-3"></i>No, I'm new to investing
+                        </button>
+                        <button onclick="selectInvestments('FD/RD Only')" class="invest-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-piggy-bank text-green-500 mr-3"></i>Only Fixed Deposits / RD
+                        </button>
+                        <button onclick="selectInvestments('Some Mutual Funds')" class="invest-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-chart-pie text-blue-500 mr-3"></i>Some Mutual Funds / SIPs
+                        </button>
+                        <button onclick="selectInvestments('Diversified Portfolio')" class="invest-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-briefcase text-purple-500 mr-3"></i>Diversified Portfolio (Stocks, MF, etc.)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div id="q6" class="question-slide hidden">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">6. How much can you invest monthly?</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="selectMonthly('< 2,000')" class="monthly-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            Below ₹2,000
+                        </button>
+                        <button onclick="selectMonthly('2,000 - 5,000')" class="monthly-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            ₹2,000 - ₹5,000
+                        </button>
+                        <button onclick="selectMonthly('5,000 - 10,000')" class="monthly-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            ₹5,000 - ₹10,000
+                        </button>
+                        <button onclick="selectMonthly('10,000 - 25,000')" class="monthly-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            ₹10,000 - ₹25,000
+                        </button>
+                        <button onclick="selectMonthly('> 25,000')" class="monthly-option p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition col-span-2">
+                            Above ₹25,000
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div id="q7" class="question-slide hidden">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">7. What is your investment horizon?</h3>
+                    <div class="space-y-3">
+                        <button onclick="selectHorizon('< 1 year')" class="horizon-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-calendar text-red-500 mr-3"></i>Short-term (Less than 1 year)
+                        </button>
+                        <button onclick="selectHorizon('1-3 years')" class="horizon-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-calendar-alt text-orange-500 mr-3"></i>1-3 years
+                        </button>
+                        <button onclick="selectHorizon('3-5 years')" class="horizon-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-calendar-week text-yellow-500 mr-3"></i>3-5 years
+                        </button>
+                        <button onclick="selectHorizon('5-10 years')" class="horizon-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-calendar-check text-green-500 mr-3"></i>5-10 years
+                        </button>
+                        <button onclick="selectHorizon('> 10 years')" class="horizon-option w-full p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 smooth-transition">
+                            <i class="fas fa-calendar-plus text-blue-500 mr-3"></i>Long-term (More than 10 years)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Results Slide -->
+                <div id="results" class="question-slide hidden">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check-circle text-green-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Your Financial Health Score</h3>
+                        <div class="text-5xl font-bold text-blue-900 mb-4" id="healthScore">75%</div>
+                        <p class="text-gray-600 mb-6" id="scoreMessage">You're on the right track!</p>
+                        
+                        <div class="bg-blue-50 rounded-xl p-6 mb-6">
+                            <h4 class="font-bold text-blue-900 mb-3">Recommended Products for You</h4>
+                            <div id="recommendations" class="space-y-2 text-left">
+                                <!-- Dynamic recommendations -->
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <button onclick="resetQuestionnaire()" class="flex-1 bg-gray-200 text-gray-700 font-bold py-3 rounded-xl hover:bg-gray-300 smooth-transition">
+                                <i class="fas fa-redo mr-2"></i>Retake Assessment
+                            </button>
+                            <button onclick="getPersonalizedAdvice()" class="flex-1 gradient-bg text-white font-bold py-3 rounded-xl hover:shadow-lg smooth-transition">
+                                <i class="fab fa-whatsapp mr-2"></i>Get Personalized Advice
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TIMELINE SECTION ========== -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-orange-500 font-bold text-sm uppercase tracking-wider">Our Journey</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-3">20+ Years of Trust & Excellence</h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="relative">
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-900 to-green-500"></div>
+
+                <div class="space-y-8">
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-building text-blue-900 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-gray-50 rounded-2xl p-6 shadow-sm">
+                            <span class="text-sm font-bold text-blue-900">1995 - 2010</span>
+                            <h4 class="text-lg font-bold text-gray-800 mt-1">Early Career</h4>
+                            <p class="text-gray-600 mt-2">Started journey in Banking & Real Estate sector, building strong financial foundation.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-shield-alt text-green-700 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-gray-50 rounded-2xl p-6 shadow-sm">
+                            <span class="text-sm font-bold text-green-700">2010 - 2018</span>
+                            <h4 class="text-lg font-bold text-gray-800 mt-1">Insurance Expertise</h4>
+                            <p class="text-gray-600 mt-2">Built strong foundation in life and health insurance planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-chart-line text-purple-700 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-gray-50 rounded-2xl p-6 shadow-sm">
+                            <span class="text-sm font-bold text-purple-700">2018 - Present</span>
+                            <h4 class="text-lg font-bold text-gray-800 mt-1">Mutual Fund Distribution</h4>
+                            <p class="text-gray-600 mt-2">Focused on SIP, wealth creation, and goal-based investing. ARN-800075.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-star text-orange-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl p-6 shadow-lg">
+                            <span class="text-sm font-bold text-yellow-300">Today & Beyond</span>
+                            <h4 class="text-lg font-bold text-white mt-1">Helping Investors Achieve Freedom</h4>
+                            <p class="text-blue-100 mt-2">Helping investors across Kerala achieve financial freedom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TESTIMONIAL SECTION ========== -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-green-600 font-bold text-sm uppercase tracking-wider">Testimonials</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-3">What Our Clients Say</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic mb-6">"Justin helped me start my first SIP with confidence. His guidance on mutual fund selection was invaluable."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span class="text-blue-900 font-bold">R</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-800">Rajesh Kumar</p>
+                        <p class="text-sm text-gray-500">SIP Investor since 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic mb-6">"The retirement planning calculator and Justin's advice opened my eyes. Now I have a clear roadmap."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                        <span class="text-green-700 font-bold">M</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-800">Mathew Thomas</p>
+                        <p class="text-sm text-gray-500">Client since 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 italic mb-6">"I was confused about where to invest for my daughter's education. Justin created a custom plan."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <span class="text-purple-700 font-bold">A</span>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-800">Anita Nair</p>
+                        <p class="text-sm text-gray-500">Parent Investor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CTA SECTION ========== -->
+<section class="py-20 gradient-bg">
+    <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Investment Journey?</h2>
+        <p class="text-xl text-blue-100 mb-8">Get personalized investment advice from an AMFI registered mutual fund distributor.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/918848499404" class="inline-flex items-center gap-3 bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 shadow-lg hover:shadow-xl smooth-transition">
+                <i class="fab fa-whatsapp text-xl"></i>
+                Chat on WhatsApp
+            </a>
+            <a href="tel:8848499404" class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold border border-white/30 hover:bg-white/30 smooth-transition">
+                <i class="fas fa-phone-alt"></i>
+                Call Now: 88484 99404
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="logo.png" alt="Global Financial Services" class="h-10 w-auto">
+                    <div>
+                        <span class="font-bold text-white text-lg">Global Financial</span>
+                        <span class="block text-xs text-orange-400 font-bold uppercase">Services</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm">Your trusted partner in wealth creation and financial planning.</p>
+                <p class="text-gray-400 text-sm mt-3">ARN-800075</p>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="index.html" class="hover:text-white smooth-transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white smooth-transition">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white smooth-transition">Services</a></li>
+                    <li><a href="retirement.html" class="hover:text-white smooth-transition">Retirement Planner</a></li>
+                    <li><a href="education.html" class="hover:text-white smooth-transition">Education Planner</a></li>
+                    <li><a href="contact.html" class="hover:text-white smooth-transition">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-white mb-4">Products</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li>Mutual Funds</li>
+                    <li>SIP Planning</li>
+                    <li>Tax Saving ELSS</li>
+                    <li>Retirement Planning</li>
+                    <li>Child Education Plan</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-white mb-4">Contact Info</h4>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-map-marker-alt mt-1 text-blue-400"></i>
+                        <span>Thirumoolapuram, Thiruvalla, Kerala</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-phone-alt text-blue-400"></i>
+                        <span>+91 88484 99404</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-id-card text-blue-400"></i>
+                        <span>ARN-800075</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+            <p>© 2025 Global Financial Services. All Rights Reserved. | AMFI Registered Mutual Fund Distributor</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== STICKY BOTTOM BAR ========== -->
+<div class="fixed bottom-0 left-0 right-0 lg:hidden bg-white shadow-2xl border-t border-gray-200 z-40">
+    <div class="flex items-stretch">
+        <a href="tel:8848499404" class="flex-1 flex items-center justify-center gap-2 bg-blue-900 text-white py-4 font-semibold">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+        </a>
+        <a href="https://wa.me/918848499404" class="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white py-4 font-semibold">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Mobile Menu Toggle
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // Quick SIP Calculator
+    function calculateQuickSIP() {
+        const amount = parseFloat(document.getElementById('quickSipAmount').value);
+        const years = parseFloat(document.getElementById('quickSipYears').value);
+        
+        if (isNaN(amount) || isNaN(years) || amount <= 0 || years <= 0) {
+            alert('Please enter valid values');
+            return;
+        }
+        
+        const monthlyRate = 0.12 / 12;
+        const months = years * 12;
+        const futureValue = amount * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate);
+        
+        document.getElementById('quickSipResult').innerHTML = '₹' + Math.round(futureValue).toLocaleString('en-IN');
+    }
+
+    // Questionnaire Logic
+    let currentQuestion = 1;
+    const answers = {};
+    
+    function updateProgress() {
+        const progress = (currentQuestion / 7) * 100;
+        document.getElementById('progressBar').style.width = progress + '%';
+        document.getElementById('progressText').innerHTML = `Question ${currentQuestion} of 7`;
+    }
+
+    function showQuestion(qNum) {
+        document.querySelectorAll('.question-slide').forEach(slide => slide.classList.add('hidden'));
+        document.getElementById('q' + qNum).classList.remove('hidden');
+        currentQuestion = qNum;
+        updateProgress();
+    }
+
+    function selectAge(age) {
+        answers.age = age;
+        showQuestion(2);
+    }
+
+    function selectGoal(goal) {
+        answers.goal = goal;
+        showQuestion(3);
+    }
+
+    function selectRisk(risk) {
+        answers.risk = risk;
+        showQuestion(4);
+    }
+
+    function selectIncome(income) {
+        answers.income = income;
+        showQuestion(5);
+    }
+
+    function selectInvestments(investments) {
+        answers.investments = investments;
+        showQuestion(6);
+    }
+
+    function selectMonthly(monthly) {
+        answers.monthly = monthly;
+        showQuestion(7);
+    }
+
+    function selectHorizon(horizon) {
+        answers.horizon = horizon;
+        showResults();
+    }
+
+    function showResults() {
+        document.querySelectorAll('.question-slide').forEach(slide => slide.classList.add('hidden'));
+        document.getElementById('results').classList.remove('hidden');
+        
+        let score = 0;
+        let recommendations = [];
+        
+        if (answers.age === '26-35') score += 20;
+        else if (answers.age === '36-45') score += 15;
+        else if (answers.age === '18-25') score += 10;
+        else if (answers.age === '46-55') score += 5;
+        
+        if (answers.goal === 'Wealth Creation') score += 15;
+        else if (answers.goal === 'Retirement Planning') score += 20;
+        else if (answers.goal === 'Child Education') score += 15;
+        
+        if (answers.risk === 'High') score += 15;
+        else if (answers.risk === 'Moderate') score += 10;
+        
+        if (answers.investments === 'Diversified Portfolio') score += 20;
+        else if (answers.investments === 'Some Mutual Funds') score += 15;
+        else if (answers.investments === 'FD/RD Only') score += 5;
+        
+        if (answers.horizon === '> 10 years') score += 15;
+        else if (answers.horizon === '5-10 years') score += 10;
+        
+        if (answers.risk === 'Low') {
+            recommendations = ['Large Cap Funds', 'Index Funds', 'Debt Funds'];
+        } else if (answers.risk === 'Moderate') {
+            recommendations = ['Flexi Cap Funds', 'Balanced Advantage Funds', 'Large & Mid Cap Funds'];
+        } else {
+            recommendations = ['Small Cap Funds', 'Mid Cap Funds', 'Flexi Cap Funds'];
+        }
+        
+        if (answers.goal === 'Tax Saving') {
+            recommendations.unshift('ELSS Tax Saving Funds');
+        }
+        
+        if (answers.goal === 'Retirement Planning') {
+            recommendations.unshift('Retirement Focused Funds');
+        }
+        
+        document.getElementById('healthScore').innerHTML = Math.min(score, 100) + '%';
+        
+        if (score >= 70) {
+            document.getElementById('scoreMessage').innerHTML = "Excellent! You're on the right track to financial freedom!";
+        } else if (score >= 50) {
+            document.getElementById('scoreMessage').innerHTML = 'Good start! Let us help you optimize your investments.';
+        } else {
+            document.getElementById('scoreMessage').innerHTML = "You have great potential! Let's create a solid financial plan together.";
+        }
+        
+        const recHTML = recommendations.slice(0, 3).map(rec => 
+            `<div class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>${rec}</div>`
+        ).join('');
+        
+        document.getElementById('recommendations').innerHTML = recHTML;
+    }
+
+    function resetQuestionnaire() {
+        currentQuestion = 1;
+        Object.keys(answers).forEach(key => delete answers[key]);
+        showQuestion(1);
+    }
+
+    function getPersonalizedAdvice() {
+        const message = `Hi Justin, I completed the financial health check. 
+        Age: ${answers.age}
+        Goal: ${answers.goal}
+        Risk: ${answers.risk}
+        Monthly Investment: ${answers.monthly}
+        Horizon: ${answers.horizon}
+        
+        Please provide personalized investment advice.`;
+        
+        const url = `https://wa.me/918848499404?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    }
+
+    // Initialize
+    window.onload = function() {
+        calculateQuickSIP();
+    };
+</script>
+
+</body>
+</html>

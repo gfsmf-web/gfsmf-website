@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Planner | Global Financial Services</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .orange-gradient { background: linear-gradient(135deg, #ea580c 0%, #f97316 100%); }
+        .smooth-transition { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo with Image -->
+<a href="index.html" class="flex items-center gap-3 group">
+    <img src="logo.png" alt="Global Financial Services" class="h-12 w-auto md:h-14 group-hover:scale-105 smooth-transition">
+    <div class="flex flex-col">
+        <span class="font-bold text-blue-900 text-lg md:text-xl leading-tight">Global Financial</span>
+        <span class="text-xs text-orange-500 font-bold tracking-[0.2em] uppercase">Services</span>
+    </div>
+</a>
+
+            <div class="hidden lg:flex items-center space-x-1">
+                <a href="index.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Home</a>
+                <a href="about.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">About</a>
+                <a href="services.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Services</a>
+                <a href="calculator.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">SIP Calc</a>
+                <a href="retirement.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Retirement</a>
+                <a href="education.html" class="px-4 py-2 text-sm font-semibold text-orange-600 bg-orange-50 rounded-lg">Education</a>
+                <a href="contact.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/918848499404" class="hidden sm:flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-green-600 smooth-transition">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-blue-900 p-2 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div class="px-4 py-4 space-y-1">
+            <a href="index.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Home</a>
+            <a href="retirement.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Retirement Planner</a>
+            <a href="education.html" class="block px-4 py-3 text-orange-600 bg-orange-50 rounded-lg font-semibold">Education Planner</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="orange-gradient py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <i class="fas fa-graduation-cap mr-2"></i>Secure Their Future
+        </span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Children's Education Planner</h1>
+        <p class="text-xl text-orange-100 max-w-3xl mx-auto">Calculate the future cost of higher education and start planning today for your child's bright tomorrow.</p>
+    </div>
+</section>
+
+<!-- ========== CALCULATOR SECTION ========== -->
+<section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Left Column - Input Form -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                    <i class="fas fa-child text-orange-600"></i>
+                    Education Goal Details
+                </h2>
+                
+                <div class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-baby mr-2 text-orange-600"></i>Child's Current Age
+                        </label>
+                        <input type="number" id="childAge" value="8" min="0" max="25"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-university mr-2 text-blue-600"></i>Age for Higher Education
+                        </label>
+                        <input type="number" id="eduAge" value="18" min="15" max="30"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-rupee-sign mr-2 text-green-600"></i>Current Cost of Education (₹)
+                        </label>
+                        <input type="number" id="currentCost" value="1500000" min="100000"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none smooth-transition">
+                        <p class="text-xs text-gray-500 mt-1">Estimated total cost of desired course today</p>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-chart-line mr-2 text-purple-600"></i>Education Inflation (%)
+                        </label>
+                        <input type="number" id="eduInflation" value="10" min="5" max="20" step="0.5"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none smooth-transition">
+                        <p class="text-xs text-gray-500 mt-1">Education costs typically rise faster than general inflation</p>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-percent mr-2 text-blue-600"></i>Expected Investment Return (%)
+                        </label>
+                        <input type="number" id="expectedReturn" value="12" min="5" max="20" step="0.5"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <button onclick="calculateEducation()" 
+                            class="w-full orange-gradient text-white font-bold py-4 rounded-xl hover:shadow-lg smooth-transition mt-6">
+                        <i class="fas fa-calculator mr-2"></i>
+                        Calculate Future Cost
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column - Results -->
+            <div class="bg-gradient-to-br from-orange-600 to-orange-700 rounded-3xl p-8 shadow-xl text-white">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fas fa-chart-pie text-yellow-300"></i>
+                    Your Education Plan
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <p class="text-orange-200 text-sm mb-2">Years Until Education Begins</p>
+                        <p class="text-4xl font-bold" id="yearsToEdu">10 Years</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-6 text-orange-900">
+                        <p class="text-sm font-semibold mb-2">Future Cost of Education</p>
+                        <p class="text-4xl font-bold" id="futureCostDisplay">₹38,90,610</p>
+                        <p class="text-xs mt-2 opacity-75">At 10% education inflation</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <p class="text-orange-200 text-sm mb-2">Monthly SIP Required</p>
+                        <p class="text-3xl font-bold text-green-300" id="requiredSipDisplay">₹17,234</p>
+                        <p class="text-xs text-orange-200 mt-2" id="returnRateText">At 12% expected returns</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <p class="text-orange-200 text-sm mb-2">Total Investment</p>
+                        <p class="text-2xl font-semibold" id="totalInvestment">₹20,68,080</p>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="mt-8">
+                    <a href="https://wa.me/918848499404" 
+                       class="block w-full bg-green-500 text-white text-center font-bold py-4 rounded-xl hover:bg-green-600 smooth-transition">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Start Education Planning
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== EDUCATION PLANNING TIPS ========== -->
+<section class="py-16 bg-orange-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-orange-900">Smart Education Planning Tips</h2>
+            <p class="text-orange-700 mt-3">Strategies to build a strong education corpus</p>
+        </div>
+        
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-calendar-alt text-orange-600 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Start Early</h4>
+                <p class="text-gray-600 text-sm">Begin investing as soon as your child is born for maximum benefit.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-balance-scale text-blue-600 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Balance Risk</h4>
+                <p class="text-gray-600 text-sm">Shift to safer investments as the goal approaches.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Beat Inflation</h4>
+                <p class="text-gray-600 text-sm">Equity investments help beat education inflation over long term.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 shadow-sm">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-sync-alt text-purple-600 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Review Yearly</h4>
+                <p class="text-gray-600 text-sm">Adjust your plan based on changing goals and market conditions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONSULTATION CTA ========== -->
+<section class="py-16 orange-gradient">
+    <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-white mb-4">Secure Your Child's Academic Future</h2>
+        <p class="text-xl text-orange-100 mb-8">Get expert guidance on creating the perfect education fund.</p>
+        
+        <div class="max-w-md mx-auto">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <input type="tel" id="eduConsultPhone" placeholder="Enter your mobile number" 
+                       class="flex-1 p-4 rounded-xl border-0 focus:ring-2 focus:ring-yellow-400 outline-none">
+                <button type="button" onclick="requestEduConsultation()" 
+                        class="bg-white text-orange-600 font-bold px-8 py-4 rounded-xl hover:bg-orange-50 smooth-transition">
+                    Get Expert Advice
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="mb-6">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <i class="fas fa-chart-line text-white"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-white text-lg">Global Financial</span>
+                    <span class="block text-xs text-orange-400 font-bold uppercase">Services</span>
+                </div>
+            </div>
+        </div>
+        <p class="font-bold text-white mb-2">ARN-800075 | Justin Chacko</p>
+        <p class="text-gray-400 text-sm">Thirumoolapuram, Thiruvalla, Kerala</p>
+        <p class="text-gray-400 text-sm mt-1">📞 88484 99404</p>
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <p class="text-gray-500 text-xs">© 2025 Global Financial Services. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    function calculateEducation() {
+        const age = parseInt(document.getElementById('childAge').value);
+        const targetAge = parseInt(document.getElementById('eduAge').value);
+        const cost = parseFloat(document.getElementById('currentCost').value);
+        const inflation = parseFloat(document.getElementById('eduInflation').value) / 100;
+        const expectedReturn = parseFloat(document.getElementById('expectedReturn').value) / 100;
+        
+        if (targetAge <= age) {
+            alert("Education age must be greater than current age.");
+            return;
+        }
+        
+        const yearsToGoal = targetAge - age;
+        const monthsToGoal = yearsToGoal * 12;
+        
+        // Future Cost Calculation
+        const futureCost = cost * Math.pow((1 + inflation), yearsToGoal);
+        
+        // Monthly SIP Required
+        const monthlyRate = expectedReturn / 12;
+        const sipRequired = (futureCost * monthlyRate) / (Math.pow(1 + monthlyRate, monthsToGoal) - 1);
+        const totalInvestment = sipRequired * monthsToGoal;
+        
+        // Update UI
+        document.getElementById('yearsToEdu').innerHTML = yearsToGoal + ' Years';
+        document.getElementById('futureCostDisplay').innerHTML = '₹' + Math.round(futureCost).toLocaleString('en-IN');
+        document.getElementById('requiredSipDisplay').innerHTML = '₹' + Math.round(sipRequired).toLocaleString('en-IN');
+        document.getElementById('totalInvestment').innerHTML = '₹' + Math.round(totalInvestment).toLocaleString('en-IN');
+        document.getElementById('returnRateText').innerHTML = `At ${document.getElementById('expectedReturn').value}% expected returns`;
+    }
+
+    function requestEduConsultation() {
+        const phone = document.getElementById('eduConsultPhone').value.trim();
+        
+        if (!phone) {
+            alert('Please enter your mobile number');
+            return;
+        }
+        
+        const message = `Hi, I need education planning advice for my child. My number is ${phone}.`;
+        const url = `https://wa.me/918848499404?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    }
+
+    // Initialize on page load
+    window.onload = function() {
+        calculateEducation();
+    };
+</script>
+
+</body>
+</html>

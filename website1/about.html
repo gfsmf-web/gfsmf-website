@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Global Financial Services</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .smooth-transition { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+
+    <!-- Person Schema for Google Knowledge Panel & Photo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Justin Chacko",
+      "image": "https://globalfinancial.services/justin-chacko.jpg",
+      "jobTitle": "AMFI Registered Mutual Fund Distributor",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Global Financial Services",
+        "url": "https://globalfinancial.services"
+      },
+      "url": "https://globalfinancial.services/about",
+      "sameAs": [
+        "https://wa.me/918848499404",
+        "https://www.linkedin.com/in/justinchacko",
+        "https://www.facebook.com/globalfinancialservices"
+      ],
+      "knowsAbout": ["Mutual Funds", "SIP", "Retirement Planning", "Education Planning", "Term Insurance", "Health Insurance", "Portfolio Management"],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "AMFI Registered Mutual Fund Distributor",
+        "credentialCategory": "Professional Certification",
+        "identifier": "ARN-800075"
+      },
+      "telephone": "+918848499404",
+      "email": "justin.chacko@yahoo.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Thiroomoolapuram",
+        "addressLocality": "Thiruvalla",
+        "addressRegion": "Kerala",
+        "postalCode": "689115",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Global Financial Services" class="h-12 w-auto md:h-14 group-hover:scale-105 smooth-transition">
+                <div class="flex flex-col">
+                    <span class="font-bold text-blue-900 text-lg md:text-xl leading-tight">Global Financial</span>
+                    <span class="text-xs text-orange-500 font-bold tracking-[0.2em] uppercase">Services</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-1">
+                <a href="index.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Home</a>
+                <a href="about.html" class="px-4 py-2 text-sm font-semibold text-blue-900 bg-blue-50 rounded-lg">About Us</a>
+                <a href="services.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Services</a>
+                <a href="retirement.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Retirement</a>
+                <a href="education.html" class="px-4 py-2 text-sm font-medium text-orange-600 hover:text-orange-700 hover:bg-orange-50 rounded-lg smooth-transition">Education</a>
+                <a href="contact.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/918848499404" class="hidden sm:flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-green-600 smooth-transition">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-blue-900 p-2 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div class="px-4 py-4 space-y-1">
+            <a href="index.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Home</a>
+            <a href="about.html" class="block px-4 py-3 text-blue-900 bg-blue-50 rounded-lg font-semibold">About Us</a>
+            <a href="services.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Our Services</a>
+            <a href="retirement.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Retirement Planner</a>
+            <a href="education.html" class="block px-4 py-3 text-orange-600 hover:bg-orange-50 rounded-lg">Education Planner</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="gradient-bg py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <i class="fas fa-users mr-2"></i>Know Your Advisor
+        </span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Justin Chacko</h1>
+        <p class="text-xl text-blue-100 max-w-3xl mx-auto">20+ years of expertise in Banking, Insurance, and Mutual Fund Distribution</p>
+    </div>
+</section>
+
+<!-- ========== PROFILE SECTION (SINGLE, WITH PHOTO) ========== -->
+<section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Left Column: Profile Card with Photo -->
+            <div>
+                <div class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-3xl p-8 text-white">
+                    <!-- Photo -->
+                    <img src="justin-chacko.jpg" alt="Justin Chacko - AMFI registered mutual fund distributor in Thiruvalla" 
+                         class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
+                    <h2 class="text-3xl font-bold mb-4">Justin Chacko</h2>
+                    <p class="text-blue-100 mb-6">AMFI Registered Mutual Fund Distributor | ARN-800075</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>20+ Years Financial Services Experience</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>Banking & Real Estate Background</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>Insurance Expertise (Life & Health)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>Mutual Fund Distribution Since 2018</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span>500+ Satisfied Clients Across Kerala</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Philosophy & Credentials -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-blue-900">My Philosophy</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    I believe that financial freedom is achievable for everyone with the right guidance and disciplined investing. My approach combines decades of experience in banking and insurance with modern mutual fund strategies to create personalized wealth plans.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Every client's financial journey is unique. I take time to understand your goals, risk tolerance, and life situation before recommending any investment product. My commitment is to provide transparent, unbiased advice that puts your interests first.
+                </p>
+                
+                <div class="bg-blue-50 rounded-2xl p-6 mt-6">
+                    <h4 class="font-bold text-blue-900 mb-3">Credentials & Registrations</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-certificate text-blue-600 mt-1"></i>
+                            <span><strong>ARN-800075</strong> – AMFI Registered Mutual Fund Distributor</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-certificate text-blue-600 mt-1"></i>
+                            <span><strong>IRDA Licensed</strong> – Insurance Advisor (Life & General)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-certificate text-blue-600 mt-1"></i>
+                            <span><strong>NISM Certified</strong> – Mutual Fund Distribution</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TIMELINE SECTION ========== -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <span class="text-orange-500 font-bold text-sm uppercase tracking-wider">Professional Journey</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mt-3">20+ Years of Excellence</h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="relative">
+                <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-900 to-green-500"></div>
+
+                <div class="space-y-8">
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-building text-blue-900 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-sm">
+                            <span class="text-sm font-bold text-blue-900">1995 – 2010</span>
+                            <h4 class="text-lg font-bold text-gray-800 mt-1">Banking & Real Estate</h4>
+                            <p class="text-gray-600 mt-2">Started professional journey in banking sector, gaining deep understanding of financial products and customer needs. Later expanded into real estate, helping clients make informed property investment decisions.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-shield-alt text-green-700 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-sm">
+                            <span class="text-sm font-bold text-green-700">2010 – 2018</span>
+                            <h4 class="text-lg font-bold text-gray-800 mt-1">Insurance Advisory</h4>
+                            <p class="text-gray-600 mt-2">Specialized in life and health insurance planning. Helped hundreds of families secure their financial future with appropriate coverage. Built reputation for honest, need-based insurance advice.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-chart-line text-purple-700 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-sm">
+                            <span class="text-sm font-bold text-purple-700">2018 – Present</span>
+                            <h4 class="text-lg font-bold text-gray-800 mt-1">Mutual Fund Distribution</h4>
+                            <p class="text-gray-600 mt-2">Obtained AMFI registration (ARN-800075) and focused on mutual fund distribution. Specialized in SIP-based wealth creation, retirement planning, and goal-based investing strategies.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-6">
+                        <div class="relative z-10 w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center border-4 border-white shadow-lg">
+                            <i class="fas fa-star text-orange-600 text-xl"></i>
+                        </div>
+                        <div class="flex-1 bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl p-6 shadow-lg">
+                            <span class="text-sm font-bold text-yellow-300">Today & Beyond</span>
+                            <h4 class="text-lg font-bold text-white mt-1">Comprehensive Financial Planning</h4>
+                            <p class="text-blue-100 mt-2">Integrating banking, insurance, and investment expertise to provide holistic financial planning. Committed to helping clients across Kerala achieve financial independence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== WHY CHOOSE US ========== -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Why Choose Global Financial Services?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="text-center p-6 card-hover">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-medal text-blue-900 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">20+ Years Experience</h4>
+                <p class="text-gray-600 text-sm">Decades of financial services expertise across banking, insurance, and investments.</p>
+            </div>
+            
+            <div class="text-center p-6 card-hover">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-hand-holding-heart text-green-700 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Client-First Approach</h4>
+                <p class="text-gray-600 text-sm">Unbiased advice tailored to your unique financial goals and situation.</p>
+            </div>
+            
+            <div class="text-center p-6 card-hover">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-building text-purple-700 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">15+ AMC Partners</h4>
+                <p class="text-gray-600 text-sm">Access to all major mutual fund houses for diversified investment options.</p>
+            </div>
+            
+            <div class="text-center p-6 card-hover">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-clock text-orange-700 text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Lifetime Support</h4>
+                <p class="text-gray-600 text-sm">Ongoing portfolio reviews and support throughout your investment journey.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CTA SECTION ========== -->
+<section class="py-16 gradient-bg">
+    <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Start Your Financial Journey?</h2>
+        <p class="text-xl text-blue-100 mb-8">Schedule a free consultation with Justin Chacko today.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://wa.me/918848499404" class="inline-flex items-center gap-3 bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 shadow-lg hover:shadow-xl smooth-transition">
+                <i class="fab fa-whatsapp text-xl"></i>
+                Chat on WhatsApp
+            </a>
+            <a href="contact.html" class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold border border-white/30 hover:bg-white/30 smooth-transition">
+                <i class="fas fa-envelope"></i>
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="mb-6">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <i class="fas fa-chart-line text-white"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-white text-lg">Global Financial</span>
+                    <span class="block text-xs text-orange-400 font-bold uppercase">Services</span>
+                </div>
+            </div>
+        </div>
+        <p class="font-bold text-white mb-2">ARN-800075 | Justin Chacko</p>
+        <p class="text-gray-400 text-sm">Thirumoolapuram, Thiruvalla, Kerala</p>
+        <p class="text-gray-400 text-sm mt-1">📞 88484 99404</p>
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <p class="text-gray-500 text-xs">© 2025 Global Financial Services. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

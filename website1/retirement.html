@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Planner | Global Financial Services</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+        .smooth-transition { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+<!-- ========== NAVBAR ========== -->
+<nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo with Image -->
+<a href="index.html" class="flex items-center gap-3 group">
+    <img src="logo.png" alt="Global Financial Services" class="h-12 w-auto md:h-14 group-hover:scale-105 smooth-transition">
+    <div class="flex flex-col">
+        <span class="font-bold text-blue-900 text-lg md:text-xl leading-tight">Global Financial</span>
+        <span class="text-xs text-orange-500 font-bold tracking-[0.2em] uppercase">Services</span>
+    </div>
+</a>
+
+            <div class="hidden lg:flex items-center space-x-1">
+                <a href="index.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Home</a>
+                <a href="about.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">About</a>
+                <a href="services.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Services</a>
+                <a href="calculator.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">SIP Calc</a>
+                <a href="retirement.html" class="px-4 py-2 text-sm font-semibold text-blue-900 bg-blue-50 rounded-lg">Retirement</a>
+                <a href="education.html" class="px-4 py-2 text-sm font-medium text-orange-600 hover:text-orange-700 hover:bg-orange-50 rounded-lg smooth-transition">Education</a>
+                <a href="contact.html" class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-gray-50 rounded-lg smooth-transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/918848499404" class="hidden sm:flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-green-600 smooth-transition">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button onclick="toggleMenu()" class="lg:hidden text-blue-900 p-2 hover:bg-gray-100 rounded-lg">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <div class="px-4 py-4 space-y-1">
+            <a href="index.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Home</a>
+            <a href="retirement.html" class="block px-4 py-3 text-blue-900 bg-blue-50 rounded-lg font-semibold">Retirement Planner</a>
+            <a href="education.html" class="block px-4 py-3 text-orange-600 hover:bg-orange-50 rounded-lg">Education Planner</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="gradient-bg py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <i class="fas fa-calculator mr-2"></i>Financial Planning Tool
+        </span>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Retirement Planning Calculator</h1>
+        <p class="text-xl text-blue-100 max-w-3xl mx-auto">Plan today to ensure a comfortable and independent life tomorrow. Calculate your retirement corpus needs in minutes.</p>
+    </div>
+</section>
+
+<!-- ========== CALCULATOR SECTION ========== -->
+<section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Left Column - Input Form -->
+            <div class="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+                    <i class="fas fa-sliders-h text-blue-600"></i>
+                    Your Retirement Details
+                </h2>
+                
+                <div class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-user mr-2 text-blue-600"></i>Current Age
+                        </label>
+                        <input type="number" id="currentAge" value="30" min="18" max="80" 
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-flag-checkered mr-2 text-green-600"></i>Retirement Age
+                        </label>
+                        <input type="number" id="retirementAge" value="60" min="40" max="90"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-rupee-sign mr-2 text-green-600"></i>Monthly Expenses (₹)
+                        </label>
+                        <input type="number" id="monthlyExpenses" value="30000" min="5000"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                        <p class="text-xs text-gray-500 mt-1">Current monthly household expenses</p>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-chart-line mr-2 text-orange-600"></i>Expected Inflation (%)
+                        </label>
+                        <input type="number" id="inflation" value="6" min="2" max="15" step="0.5"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">
+                            <i class="fas fa-percent mr-2 text-purple-600"></i>Expected Return on Investment (%)
+                        </label>
+                        <input type="number" id="expectedReturn" value="12" min="5" max="20" step="0.5"
+                               class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none smooth-transition">
+                    </div>
+                    
+                    <button onclick="calculateRetirement()" 
+                            class="w-full gradient-bg text-white font-bold py-4 rounded-xl hover:shadow-lg smooth-transition mt-6">
+                        <i class="fas fa-calculator mr-2"></i>
+                        Calculate Retirement Needs
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column - Results -->
+            <div class="bg-gradient-to-br from-blue-900 to-blue-800 rounded-3xl p-8 shadow-xl text-white">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fas fa-chart-bar text-yellow-300"></i>
+                    Your Retirement Plan
+                </h2>
+                
+                <!-- Key Stats -->
+                <div class="space-y-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <p class="text-blue-200 text-sm mb-2">Years to Retirement</p>
+                        <p class="text-4xl font-bold" id="yearsToRetire">30 Years</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <p class="text-blue-200 text-sm mb-2">Future Monthly Expenses (at retirement)</p>
+                        <p class="text-3xl font-bold text-yellow-300" id="futureMonthlyExpense">₹1,72,305</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-6 text-blue-900">
+                        <p class="text-sm font-semibold mb-2">Required Retirement Corpus</p>
+                        <p class="text-4xl font-bold" id="requiredCorpus">₹4,13,53,200</p>
+                        <p class="text-xs mt-2 opacity-75">*Based on 20 years post-retirement</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                        <p class="text-blue-200 text-sm mb-2">Monthly SIP Required</p>
+                        <p class="text-3xl font-bold text-green-300" id="suggestedSip">₹12,847</p>
+                        <p class="text-xs text-blue-200 mt-2" id="returnRateText">At 12% expected returns</p>
+                    </div>
+                </div>
+                
+                <!-- Action Button -->
+                <div class="mt-8">
+                    <a href="https://wa.me/918848499404" 
+                       class="block w-full bg-green-500 text-white text-center font-bold py-4 rounded-xl hover:bg-green-600 smooth-transition">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Start Your Retirement Plan
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== RETIREMENT TIPS ========== -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-900">Retirement Planning Tips</h2>
+            <p class="text-gray-600 mt-3">Smart strategies for a comfortable retirement</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-clock text-blue-900 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Start Early</h4>
+                <p class="text-gray-600 text-sm">The power of compounding works best with time. Start investing in your 20s or 30s.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-chart-pie text-green-700 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Diversify Investments</h4>
+                <p class="text-gray-600 text-sm">Spread your investments across equity, debt, and other asset classes.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                    <i class="fas fa-shield-alt text-purple-700 text-xl"></i>
+                </div>
+                <h4 class="font-bold text-lg mb-2">Review Regularly</h4>
+                <p class="text-gray-600 text-sm">Review your retirement plan annually and adjust for life changes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONSULTATION CTA ========== -->
+<section class="py-16 gradient-bg">
+    <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-white mb-4">Need Help Planning Your Retirement?</h2>
+        <p class="text-xl text-blue-100 mb-8">Get personalized retirement planning advice from an expert.</p>
+        
+        <form id="consultationForm" class="max-w-md mx-auto">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <input type="tel" id="consultPhone" placeholder="Enter your mobile number" 
+                       class="flex-1 p-4 rounded-xl border-0 focus:ring-2 focus:ring-yellow-400 outline-none">
+                <button type="button" onclick="requestConsultation()" 
+                        class="bg-yellow-400 text-blue-900 font-bold px-8 py-4 rounded-xl hover:bg-yellow-300 smooth-transition">
+                    Get Expert Advice
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="mb-6">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center">
+                    <i class="fas fa-chart-line text-white"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-white text-lg">Global Financial</span>
+                    <span class="block text-xs text-orange-400 font-bold uppercase">Services</span>
+                </div>
+            </div>
+        </div>
+        <p class="font-bold text-white mb-2">ARN-800075 | Justin Chacko</p>
+        <p class="text-gray-400 text-sm">Thirumoolapuram, Thiruvalla, Kerala</p>
+        <p class="text-gray-400 text-sm mt-1">📞 88484 99404</p>
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <p class="text-gray-500 text-xs">© 2025 Global Financial Services. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    function calculateRetirement() {
+        const currentAge = parseInt(document.getElementById('currentAge').value);
+        const retireAge = parseInt(document.getElementById('retirementAge').value);
+        const expenses = parseFloat(document.getElementById('monthlyExpenses').value);
+        const inflation = parseFloat(document.getElementById('inflation').value) / 100;
+        const expectedReturn = parseFloat(document.getElementById('expectedReturn').value) / 100;
+        
+        if (retireAge <= currentAge) {
+            alert("Retirement age must be greater than current age.");
+            return;
+        }
+        
+        const yearsToRetire = retireAge - currentAge;
+        const monthsToRetire = yearsToRetire * 12;
+        
+        // Future monthly expense at retirement
+        const futureMonthlyExpense = expenses * Math.pow((1 + inflation), yearsToRetire);
+        
+        // Corpus required (assuming 20 years post-retirement with inflation-adjusted withdrawals)
+        const corpus = futureMonthlyExpense * 12 * 20;
+        
+        // Monthly SIP required
+        const monthlyRate = expectedReturn / 12;
+        const sipRequired = (corpus * monthlyRate) / (Math.pow(1 + monthlyRate, monthsToRetire) - 1);
+        
+        // Update UI
+        document.getElementById('yearsToRetire').innerHTML = yearsToRetire + ' Years';
+        document.getElementById('futureMonthlyExpense').innerHTML = '₹' + Math.round(futureMonthlyExpense).toLocaleString('en-IN');
+        document.getElementById('requiredCorpus').innerHTML = '₹' + Math.round(corpus).toLocaleString('en-IN');
+        document.getElementById('suggestedSip').innerHTML = '₹' + Math.round(sipRequired).toLocaleString('en-IN');
+        document.getElementById('returnRateText').innerHTML = `At ${document.getElementById('expectedReturn').value}% expected returns`;
+    }
+
+    function requestConsultation() {
+        const phone = document.getElementById('consultPhone').value.trim();
+        
+        if (!phone) {
+            alert('Please enter your mobile number');
+            return;
+        }
+        
+        const message = `Hi, I need retirement planning advice. My number is ${phone}.`;
+        const url = `https://wa.me/918848499404?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    }
+
+    // Initialize calculator on page load
+    window.onload = function() {
+        calculateRetirement();
+    };
+</script>
+
+</body>
+</html>
